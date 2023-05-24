@@ -144,7 +144,7 @@ describe AdminMailer do
     end
 
     it "has the correct subject line" do
-      subject = "[#{ArchiveConfig.APP_SHORT_NAME}] Your AO3 admin account"
+      subject = "[#{ArchiveConfig.APP_SHORT_NAME}] Your Ad Astra admin account"
       expect(email).to have_subject(subject)
     end
 

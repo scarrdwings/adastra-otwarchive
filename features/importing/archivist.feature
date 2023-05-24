@@ -130,11 +130,11 @@ Feature: Archivist bulk imports
     When I import the work "http://ao3testing.dreamwidth.org/593.html"
       And all indexing jobs have been run
     Then I should see import confirmation
-      And I should see "ao3"
+      And I should see "aaf"
       And I should not see "[archived by archivist]"
       And 1 email should be delivered to "ao3testing@dreamwidth.org"
       And the email should contain claim information
-    When I go to ao3's works page
+    When I go to aaf's works page
     Then I should see "Story"
 
   # TODO: Enable after AO3-6353.
@@ -211,7 +211,7 @@ Feature: Archivist bulk imports
     When I am logged out
       And I follow "Claim or remove your works" in the email
     Then I should see "Claiming Your Imported Works"
-      And I should see "An archive including some of your work(s) has been moved to the Archive of Our Own."
+      And I should see "An archive including some of your work(s) has been moved to Ad Astra."
     When I choose "Orphan my works and take my email address off them, but keep my name."
       And I wait 2 seconds
       And I press "Update"
@@ -230,9 +230,9 @@ Feature: Archivist bulk imports
     When I am logged out
       And I follow "Claim or remove your works" in the email
     Then I should see "Claiming Your Imported Works"
-      And I should see "An archive including some of your work(s) has been moved to the Archive of Our Own."
+      And I should see "An archive including some of your work(s) has been moved to Ad Astra."
     When I choose "Orphan my works and take my email address off them, but keep my name."
-      And I check "Assign my works to the AO3 orphan_account, removing both my name and email address."
+      And I check "Assign my works to the AAF orphan_account, removing both my name and email address."
       And I wait 2 seconds
       And I press "Update"
     Then I should see "Your imported stories have been orphaned. Thank you for leaving them in the archive! Your preferences have been saved."
@@ -250,7 +250,7 @@ Feature: Archivist bulk imports
     When I am logged out
       And I follow "Claim or remove your works" in the email
     Then I should see "Claiming Your Imported Works"
-      And I should see "An archive including some of your work(s) has been moved to the Archive of Our Own. Please let us know what you'd like us to do with them."
+      And I should see "An archive including some of your work(s) has been moved to Ad Astra Star Trek Fanfiction Archive. Please let us know what you'd like us to do with them."
     When I choose "Please remove my works from the archive entirely."
       And I check "Do not email me in the future when works are imported with this email address."
       And I press "Update"
@@ -270,7 +270,7 @@ Feature: Archivist bulk imports
     When I am logged out
       And I follow "Claim or remove your works" in the email
     Then I should see "Claiming Your Imported Works"
-      And I should see "An archive including some of your work(s) has been moved to the Archive of Our Own. Please let us know what you'd like us to do with them."
+      And I should see "An archive including some of your work(s) has been moved to Ad Astra Star Trek Fanfiction Archive. Please let us know what you'd like us to do with them."
     When I choose "Leave my works in the care of the archivist."
       And I press "Update"
     Then I should be on the homepage
@@ -305,7 +305,7 @@ Feature: Archivist bulk imports
     When I am logged out
       And I follow "Claim or remove your works" in the email
     Then I should see "Claiming Your Imported Works"
-      And I should see "An archive including some of your work(s) has been moved to the Archive of Our Own. Please let us know what you'd like us to do with them."
+      And I should see "An archive including some of your work(s) has been moved to the Ad Astra. Please let us know what you'd like us to do with them."
     When I choose "Leave my works in the care of the archivist."
       And I check "From now on, do not import works with this email address."
       And I press "Update"

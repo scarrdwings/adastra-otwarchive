@@ -183,7 +183,7 @@ We only use error messages for LiveValidation. Style spoofs the system error mes
 }
 
 .LV_invalid {
-  background: #efd1d1;
+  background: #a79ec1;
   border: 1px solid #900;
   color: #900;
   padding: 0.25em 0.375em;

@@ -11,7 +11,7 @@ en:
           error: Please describe your concern.
           include: include all relevant links and other information in your report
           label: Description of the content you are reporting (required)
-          tos: AO3 Terms of Service
+          tos: Ad Astra Terms of Service
         email:
           description: We cannot contact you if the email address you provide is invalid.
           label: Your email (required)
@@ -36,7 +36,7 @@ en:
       heading:
         page_title: Policy Questions & Abuse Reports
       include:
-        ao3: AO3 Terms of Service
+        ao3: AAF Terms of Service
         delay: There will be an additional delay for responses in any language other than English.
         intro: 'What to include in your report description:'
         languages: We can answer Abuse reports in %{list_html}.
@@ -45,19 +45,19 @@ en:
         sources: links to any relevant sources or screenshots
         username: the username of the person you are reporting
       purview:
-        about_html: Please use this form for questions or reports about violations of the Archive's %{tos_link}.
-        dmca: review our DMCA Policy and contact our Legal team
-        dmca_takedown_html: If you would like to initiate a formal DMCA takedown request, please %{dmca_link}.
+        about_html: Please use this form for questions or reports about violations of the archive's %{tos_link}.
+        #dmca: review our DMCA Policy and contact our Legal team
+        #dmca_takedown_html: If you would like to initiate a formal DMCA takedown request, please %{dmca_link}.
         support: contact our Support team
         technical_help_html: For technical help, or if you would like to manage your Fannish Next-of-Kin, please %{support_link}.
         tos: Terms of Service
       reportable:
-        content: You would like to know whether specific content is allowed on the Archive.
+        content: You would like to know whether specific content is allowed on the archive.
         hack: You believe that your account was hacked.
-        harassment: You have experienced or witnessed harassment on the Archive.
+        harassment: You have experienced or witnessed harassment on the archive.
         intro: 'Potential reasons to submit a report to the Policy & Abuse team:'
         suspended: You have been suspended or your work has been removed, and you have not received an email explaining why.
-        violation_html: You have encountered content on the Archive that violates the %{tos_link}.
+        violation_html: You have encountered content on the archive that violates the %{tos_link}.
   admin:
     admin_invitations:
       index:
@@ -181,7 +181,7 @@ en:
         label: Translation of
   admins:
     index:
-      confidentiality_reminder: You are now logged in as an admin. That means you will probably encounter information that is personal or confidential (e.g. usernames, email and IP addresses, creator names on anonymous works, etc). Please do not use this information in ways unrelated to your OTW role. If you have questions about what you can or cannot do with information you see here, contact your committee chair(s).
+      confidentiality_reminder: You are now logged in as an admin. That means you will probably encounter information that is personal or confidential (e.g. usernames, email and IP addresses, creator names on anonymous works, etc). Please do not use this information in ways unrelated to your Administration role. If you have questions about what you can or cannot do with information you see here, contact your committee chair(s).
       log_out_reminder: Please remember to log out before resuming your normal site activity and leaving comments and kudos!
       page_title: Hi, %{login}!
       responsibility: With great power comes great responsibility.
@@ -291,7 +291,7 @@ en:
         work:
           alt_action: You can however still leave Kudos!
           disable_all: Sorry, this work doesn't allow comments.
-          disable_anon: Sorry, this work doesn't allow non-Archive users to comment.
+          disable_anon: Sorry, this work doesn't allow non-archive users to comment.
           hidden: Sorry, you can't add or edit comments on a hidden work.
           unrevealed: Sorry, you can't add or edit comments on an unrevealed work.
   feedbacks:
@@ -323,7 +323,7 @@ en:
           error: Please enter a brief summary of your message
           label: Brief summary of your question or problem (required)
       heading:
-        instructions: Please use this form for questions about how to use the Archive and for reporting any technical problems.
+        instructions: Please use this form for questions about how to use the archive and for reporting any technical problems.
         landmark:
           reference: Reference Links
         page_title: Support and Feedback
@@ -347,8 +347,8 @@ en:
         tag_changes: Requests to canonize or change tags
         work_problems: Works labeled with the wrong language or duplicate works
       status:
-        current: 'For current updates on Archive performance or downtime, please check out our Twitter feed: %{twitter_link}.'
-        twitter: "@AO3_Status"
+        current: 'For current updates on archive performance or downtime, please check out our Twitter feed: %{twitter_link}.'
+        twitter: "@adastrafanfic"
   home:
     donate:
       page_title: Donate or Volunteer
@@ -369,11 +369,11 @@ en:
     proxy_notice:
       button: Dismiss Notice
       faux_heading: 'Important message:'
-      point1: You are using a proxy site that is not part of the Archive of Our Own.
+      point1: You are using a proxy site that is not part of the Archive of Our Own.  Which was the whole point of Steff setting up this software.
       point2: The entity that set up the proxy site can see what you submit, including your IP address. If you log in through the proxy site, it can see your password.
   muted:
     mute: Mute
-    muted_items_notice_html: You have muted some users on the Archive. Some items may not be shown, and any counts may be inaccurate. You can mute or unmute users on %{muted_users_link}.
+    muted_items_notice_html: You have muted some users on the archive. Some items may not be shown, and any counts may be inaccurate. You can mute or unmute users on %{muted_users_link}.
     muted_users_link_text: your Muted Users page
     unmute: Unmute
     users:
@@ -536,13 +536,13 @@ en:
           request_invite: Request an invitation to join
           reset_password: Reset password
         restricted:
-          account_exists: If you already have an Archive of Our Own account, log in now.
-          commenting_unavailable: Commenting on this work is only available to registered users of the Archive.
+          account_exists: If you already have an Ad Astra account, log in now.
+          commenting_unavailable: Commenting on this work is only available to registered users of the archive.
           no_account: If you don't have an account, you can %{request_invite_link}.
           request_invite: request an invitation to join
           signup: Or join us for free - it's easy.
           sorry: Sorry!
-          work_unavailable: This work is only available to registered users of the Archive.
+          work_unavailable: This work is only available to registered users of the archive.
     show:
       login_banner:
         dismiss: Dismiss permanently
@@ -554,7 +554,7 @@ en:
         link_faq: check out our FAQ
         link_support: contact us through our Support and Feedback form
         link_tos: Terms of Service
-        welcome_text: Hi! It looks like you've just logged into the Archive for the first time. %{help_link} or dismiss this message permanently.
+        welcome_text: Hi! It looks like you've just logged into the archive for the first time. %{help_link} or dismiss this message permanently.
   works:
     meta:
       original_creators:

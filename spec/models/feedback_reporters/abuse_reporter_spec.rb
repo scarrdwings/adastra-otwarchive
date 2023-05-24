@@ -22,7 +22,7 @@ describe AbuseReporter do
       "departmentId" => "abuse_dep_id",
       "email" => "walrus@example.org",
       "contactId" => "1",
-      "subject" => "[AO3] Abuse - This is a tragesy",
+      "subject" => "[Ad Astra] Abuse - This is a tragedy",
       "description" => "Nothing more to say",
       "cf" => {
         "cf_language" => "English",
@@ -52,7 +52,7 @@ describe AbuseReporter do
       it "returns a hash containing a placeholder subject" do
         allow(subject).to receive(:title).and_return("")
 
-        expect(subject.report_attributes.fetch("subject")).to eq("[AO3] Abuse - No Subject")
+        expect(subject.report_attributes.fetch("subject")).to eq("[Ad Astra] Abuse - No Subject")
       end
     end
 

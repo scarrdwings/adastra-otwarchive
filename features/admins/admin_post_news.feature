@@ -7,7 +7,7 @@ Feature: Admin Actions to Post News
   Scenario: Must be authorized to post
     Given I am logged in as a "tag_wrangling" admin
     When I go to the admin-posts page
-    Then I should not see "Post AO3 News"
+    Then I should not see "Post AAF News"
 
   Scenario: Make an admin post
     Given I am logged in as a "communications" admin
@@ -107,8 +107,8 @@ Feature: Admin Actions to Post News
   Scenario: Log in as an admin and create an admin post with tags
     Given I am logged in as a "communications" admin
     When I follow "Admin Posts"
-      And I follow "Post AO3 News"
-    Then I should see "New AO3 News Post"
+      And I follow "Post AAF News"
+    Then I should see "New AAF News Post"
       And I should see "Comment permissions from the selected post will replace any permissions selected on this page."
       And I should see "Tags from the selected post will replace any tags entered on this page."
     When I fill in "admin_post_title" with "Good news, everyone!"
@@ -170,7 +170,7 @@ Feature: Admin Actions to Post News
   Scenario: If an admin post has characters like & and < and > in the title, the escaped version will not show on the various admin post pages
     Given I am logged in as a "communications" admin
     When I follow "Admin Posts"
-      And I follow "Post AO3 News"
+      And I follow "Post AAF News"
       And I fill in "admin_post_title" with "App News & a <strong> Warning"
       And I fill in "content" with "We're delaying it a week for every question we get."
     When I press "Post"
@@ -233,8 +233,8 @@ Feature: Admin Actions to Post News
     Given I am logged in as a "communications" admin
       And Persian language
     When I follow "Admin Posts"
-      And I follow "Post AO3 News"
-      Then I should see "New AO3 News Post"
+      And I follow "Post AAF News"
+      Then I should see "New AAF News Post"
     When I fill in "admin_post_title" with "فارسی"
       And I fill in "content" with "چیزهایی هست که باید در حین ایجاد یک گزارش از آنها آگاه باشید"
       And I select "Persian" from "Choose a language"

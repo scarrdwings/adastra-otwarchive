@@ -16,7 +16,7 @@ Feature: Invite queue management
     When I log out
       And I am on the homepage
     Then I should not see "Get an Invite"
-      And I should see "Archive of Our Own"
+      And I should see "Ad Astra Star Trek Fanfiction Archive"
 
   Scenario: Can turn queue on in Admin Settings and it displays as on
 
@@ -55,14 +55,14 @@ Feature: Invite queue management
     Then I should see "You've been added to our queue"
 
     # check your place in the queue - invalid address
-    When I check how long "testttt@archiveofourown.org" will have to wait in the invite request queue
+    When I check how long "testttt@adastrafanfic.com" will have to wait in the invite request queue
     Then I should see "Invitation Request Status"
       And I should see "If you can't find it, your invitation may have already been emailed to that address; please check your email spam folder as your spam filters may have placed it there."
       And I should not see "You are currently number"
 
     # check your place in the queue - correct address
-    When I check how long "test@archiveofourown.org" will have to wait in the invite request queue
-    Then I should see "Invitation Status for test@archiveofourown.org"
+    When I check how long "test@adastrafanfic.com" will have to wait in the invite request queue
+    Then I should see "Invitation Status for test@adastrafanfic.com"
       And I should see "You are currently number 1 on our waiting list! At our current rate, you should receive an invitation on or around"
 
   Scenario: Can't add yourself to the queue when queue is off
@@ -92,18 +92,18 @@ Feature: Invite queue management
     When I am on the homepage
       And all emails have been delivered
       And I follow "Get an Invitation"
-    When I fill in "invite_request_email" with "test@archiveofourown.org"
+    When I fill in "invite_request_email" with "test@adastrafanfic.com"
       And I press "Add me to the list"
       And the scheduled check_invite_queue job is run
-    Then 1 email should be delivered to test@archiveofourown.org
-    When I check how long "test@archiveofourown.org" will have to wait in the invite request queue
+    Then 1 email should be delivered to test@adastrafanfic.com
+    When I check how long "test@adastrafanfic.com" will have to wait in the invite request queue
     Then I should see "Invitation Request Status"
       And I should see "If you can't find it, your invitation may have already been emailed to that address;"
 
     # invite can be used
     When I am logged in as an admin
       And I follow "Invitations"
-      And I fill in "track_invitation_invitee_email" with "test@archiveofourown.org"
+      And I fill in "track_invitation_invitee_email" with "test@adastrafanfic.com"
       And I press "Go"
     Then I should see "Sender queue"
     When I follow "copy and use"
@@ -112,7 +112,7 @@ Feature: Invite queue management
     # user uses email invite
     Given I am a visitor
     # "You've" removed from test due to escaping on apostrophes
-    Then the email should contain "been invited to join the Archive of Our Own"
+    Then the email should contain "been invited to join Ad Astra"
       And the email should contain "fanart"
       And the email should contain "podfic"
       And the email should contain "If you do not receive this email after 48 hours"
@@ -122,14 +122,14 @@ Feature: Invite queue management
       And I fill in the sign up form with valid data
       And I fill in the following:
         | user_registration_login                 | newuser                  |
-        | user_registration_email                 | test@archiveofourown.org |
+        | user_registration_email                 | test@adastrafanfic.com |
         | user_registration_password              | password1                |
         | user_registration_password_confirmation | password1                |
       And all emails have been delivered
     When I press "Create Account"
     Then I should see "Almost Done!"
     Then 1 email should be delivered
-      And the email should contain "Welcome to the Archive of Our Own,"
+      And the email should contain "Welcome to the Ad Astra,"
       And the email should contain "newuser"
       And the email should contain "activate your account"
       And the email should not contain "translation missing"

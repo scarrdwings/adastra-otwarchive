@@ -12,10 +12,10 @@ Feature: Admin Actions to Post FAQs
       And I follow "Archive FAQ" within "#header"
     Then I should not see "Some text"
     When I follow "New FAQ Category"
-      And I fill in "Question*" with "What is AO3?"
+      And I fill in "Question*" with "What is AAF?"
       And I fill in "Answer*" with "Some text, that is sufficiently long to pass validation."
       And I fill in "Category name*" with "New subsection"
-      And I fill in "Anchor name*" with "whatisao3"
+      And I fill in "Anchor name*" with "whatisaaf"
       And I press "Post"
     Then I should see "ArchiveFaq was successfully created"
     When I go to the archive_faqs page
@@ -34,7 +34,7 @@ Feature: Admin Actions to Post FAQs
     # Post "en" FAQ
     When I go to the archive_faqs page
       And I follow "New FAQ Category"
-      And I fill in "Question*" with "What is AO3?"
+      And I fill in "Question*" with "What is AAF?"
       And I fill in "Answer*" with "Some text, that is sufficiently long to pass validation."
       And I fill in "Category name*" with "New subsection"
       And I fill in "Anchor name*" with "whatisao3"
@@ -46,7 +46,7 @@ Feature: Admin Actions to Post FAQs
       And I select "Deutsch" from "Language:"
       And I press "Go" within "div#inner.wrapper"
       And I follow "Edit"
-      And I fill in "Question*" with "Was ist AO3?"
+      And I fill in "Question*" with "Was ist AAF?"
       And I fill in "Answer*" with "Einige Text, das ist lang genug, um die Überprüfung bestanden."
       And I fill in "Category name*" with "Neuer Abschnitt"
       And I check "Question translated"
@@ -54,7 +54,7 @@ Feature: Admin Actions to Post FAQs
     Then I should see "ArchiveFaq was successfully updated."
       And I should not see "New subsection"
       And I should see "Neuer Abschnitt"
-      And I should see "Was ist AO3?"
+      And I should see "Was ist AAF?"
       And I should see "Einige Text"
 
     # Change locale "de" to "ger"
@@ -74,7 +74,7 @@ Feature: Admin Actions to Post FAQs
     When I log out
       And I go to the archive_faqs page
       And I follow "New subsection"
-    Then I should see "What is AO3?"
+    Then I should see "What is AAF?"
       And I should see "Some text"
 
     # Select "ger"
@@ -82,5 +82,5 @@ Feature: Admin Actions to Post FAQs
       And I select "Deutsch" from "Language:"
       And I press "Go" within "div#inner.wrapper"
       And I follow "Neuer Abschnitt"
-    Then I should see "Was ist AO3?"
+    Then I should see "Was ist AAF?"
       And I should see "Einige Text"

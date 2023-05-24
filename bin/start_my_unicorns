@@ -1,0 +1,32 @@
+#!/bin/bash
+me="vagrant"
+CONF=/var/otwarchive-read-only/config/unicorn.rb
+export UNICORN_PORT=9292
+export UNICORNS=8
+unicorn_master_pid=`ps ax | grep $me.sock | grep master | awk '{print $1}'`
+if [ "$unicorn_master_pid" != "" ]; then
+  echo "removing old unicorn master"
+  /var/otwarchive-read-only/bin/kill_my_unicorns
+  sleep 5
+fi
+echo "starting new unicorn master"
+if [ -f "config.ru" ]; then
+  #LOC=`pwd -P`
+  #echo setting $HOME/app/current to $LOC
+  #rm $HOME/app/current
+  #ln -s "$LOC" "$HOME/app/current"
+
+  #$HOME/bin/create_links_on_install
+  echo
+  bundle exec unicorn -l /tmp/${me}.sock -c $CONF &
+  #files=(/usr/local/etc/art/unicorn_*)
+  #WHICH="${files[RANDOM % ${#files[@]}]}"
+  #cat $WHICH
+  #Now start the pseud watcher
+  nohup /var/otwarchive-read-only/scripts/pseud_watcher.sh &
+  #now start the collection watcher
+  nohup /var/otwarchive-read-only/scripts/collection_watcher.sh &
+else
+  echo "Ooops! You don't appear to be in your rails application directory"
+fi
+

@@ -489,7 +489,7 @@ PERMITTED_HOSTS: [
   "testdownload.archiveofourown.org"
 ]
 
-USER_RENAME_LIMIT_DAYS: 7
+USER_RENAME_LIMIT_DAYS: 0
 
 # The number of readings to include in a single ReadingsJob:
 READING_JOB_SIZE: 5000

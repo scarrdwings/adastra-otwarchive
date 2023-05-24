@@ -29,7 +29,7 @@ describe KudoMailer do
 
         describe "HTML version" do
           it "has the correct content" do
-            expect(email).to have_html_part_content("<b style=\"color:#990000\">A guest</b>")
+            expect(email).to have_html_part_content("<b style=\"color:#c40055\">A guest</b>")
             expect(email).to have_html_part_content("left kudos on <")
           end
         end

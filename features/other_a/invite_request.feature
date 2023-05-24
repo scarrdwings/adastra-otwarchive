@@ -70,10 +70,10 @@ Feature: Invite requests
       And an admin grants the request
       And I try to invite a friend from my user page
     When all emails have been delivered
-      And I fill in "Email address" with "test@archiveofourown.org"
+      And I fill in "Email address" with "test@adastrafanfic.com"
       And I press "Send Invitation"
-    Then 1 email should be delivered to test@archiveofourown.org
-      And the email should contain "has invited you to join the Archive of Our Own!"
+    Then 1 email should be delivered to test@adastrafanfic.com
+      And the email should contain "has invited you to join Ad Astra!"
       And the email should contain "If you do not receive this email after 48 hours"
       And the email should contain "With an account, you can post fanworks"
 

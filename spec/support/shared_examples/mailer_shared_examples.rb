@@ -20,8 +20,8 @@ shared_examples_for "a translated email" do
 end
 
 shared_examples_for "an email with a valid sender" do
-  it "is delivered from Archive of Our Own <do-not-reply@example.org>" do
-    expect(email).to deliver_from("Archive of Our Own <#{ArchiveConfig.RETURN_ADDRESS}>")
+  it "is delivered from Ad Astra <do-not-reply@example.org>" do
+    expect(email).to deliver_from("Ad Astra <#{ArchiveConfig.RETURN_ADDRESS}>")
   end
 end
 

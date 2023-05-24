@@ -497,7 +497,7 @@ describe Work do
         expect { @work.update!(spam: true) }.
           to change { ActionMailer::Base.deliveries.count }.by(1)
         expect(@work.reload.hidden_by_admin).to be_truthy
-        expect(ActionMailer::Base.deliveries.last.subject).to eq("[AO3] Your work was hidden as spam")
+        expect(ActionMailer::Base.deliveries.last.subject).to eq("[AAF] Your work was hidden as spam")
       end
     end
     context "when the admin setting is disabled" do

@@ -1,6 +1,6 @@
 DEFAULT_EXTERNAL_URL = "http://example.org/200"
 DEFAULT_EXTERNAL_CREATOR = "Zooey Glass"
-DEFAULT_EXTERNAL_TITLE = "A Work Not Posted To The AO3"
+DEFAULT_EXTERNAL_TITLE = "A Work Not Posted To Ad Astra"
 DEFAULT_EXTERNAL_SUMMARY = "This is my story, I am its author."
 DEFAULT_EXTERNAL_FANDOM = "External Fandom"
 DEFAULT_EXTERNAL_RELATIONSHIP = "Charater A & Character B"

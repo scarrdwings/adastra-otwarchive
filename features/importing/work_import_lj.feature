@@ -110,7 +110,7 @@ Feature: Import Works from LJ
     #  And I should see "more to their friendship than he'd thought." within "div.summary"
     #  And I should see "Thanks to Tevildo and phantomphan1990 for beta-reading!"
     #  And I should see the image "src" text "http://www.rbreu.de/fan/stanwood_title_400.png"
-    #  And I should see "Follow me to AO3"
+    #  And I should see "Follow me to AAF"
     #  And I should not see "rarelitslash"
     #  And I should not see "rebecca2525"
     #  And I should not see the image "alt" text "Add to memories!"

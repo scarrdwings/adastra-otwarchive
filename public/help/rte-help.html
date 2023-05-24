@@ -3,7 +3,7 @@
 <p>The exact behavior of the Rich Text Editor (<abbr title="Rich Text Editor">RTE</abbr>) depends on your device, browser, and operating system as well as the source you're pasting from. However, starting with a well-formatted document will help you get the most out of the <abbr>RTE</abbr>. Here are some general tips to ensure that as much of your formatting as possible will be retained:</p>
 
 <ul>
-  <li><p><strong>Press <kbd>Enter</kbd> <em>once</em> between paragraphs.</strong> Pressing <kbd>Enter</kbd> twice will insert a blank paragraph, creating additional, and likely unwanted, space between paragraphs when you paste into the <abbr>RTE</abbr>. The Archive uses top and bottom margins to create the appearance of a blank line between paragraphs; you can use the paragraph formatting options in your text editor to create a similar effect without adding extra <code>&lt;p&gt;</code> tags.</p></li>
+  <li><p><strong>Press <kbd>Enter</kbd> <em>once</em> between paragraphs.</strong> Pressing <kbd>Enter</kbd> twice will insert a blank paragraph, creating additional, and likely unwanted, space between paragraphs when you paste into the <abbr>RTE</abbr>. Ad Astra uses top and bottom margins to create the appearance of a blank line between paragraphs; you can use the paragraph formatting options in your text editor to create a similar effect without adding extra <code>&lt;p&gt;</code> tags.</p></li>
   <li><p><strong>Use preset styles for headings, block quotations, code, and so on.</strong> The Styles option generally found in a text editor's Format menu will often translate into <abbr title="HyperText Markup Language">HTML</abbr> tags when pasting into the <abbr>RTE</abbr>. Simply changing the font size, font name, or text indent to create a visual approximation of a heading or block quote will always fail.</p></li>
 </ul>
 
@@ -11,7 +11,7 @@
 
 <h4>Google Drive</h4>
 
-<p>Google Drive uses inline <abbr title="Cascading Style Sheets">CSS</abbr> to change the alignment of text and to produce bold, italic, underline, and strikethrough formatting. Unfortunately, we cannot allow inline styles on the Archive, so only pure <abbr>HTML</abbr> formatting such as headings, lists, links, and tables is retained.</p>
+<p>Google Drive uses inline <abbr title="Cascading Style Sheets">CSS</abbr> to change the alignment of text and to produce bold, italic, underline, and strikethrough formatting. Unfortunately, we cannot allow inline styles on Ad Astra, so only pure <abbr>HTML</abbr> formatting such as headings, lists, links, and tables is retained.</p>
 
 <p>In some browsers, the formatting may appear to be preserved upon pasting into the <abbr>RTE</abbr>, but it will be stripped by our <abbr>HTML</abbr> sanitizer upon previewing or posting your work.</p>
 
@@ -29,13 +29,13 @@
 
 <h4>Underline and Strikethrough</h4>
 
-<p>Underline and strikethrough are often produced with <abbr>CSS</abbr>. Because the Archive does not allow the use of inline <abbr>CSS</abbr>, these text styles are frequently lost when pasting.</p>
+<p>Underline and strikethrough are often produced with <abbr>CSS</abbr>. Because Ad Astra does not allow the use of inline <abbr>CSS</abbr>, these text styles are frequently lost when pasting.</p>
 
 <p>Pasting from web pages that use <code>&lt;u&gt;</code>, <code>&lt;del&gt;</code>, <code>&lt;strike&gt;</code>, or <code>&lt;s&gt;</code> tags will work.</p>
 
 <h4>Alignment</h4>
 
-<p>Text alignment is now generally achieved with <abbr>CSS</abbr>, and because the Archive does not allow inline <abbr>CSS</abbr>, alignment will often be lost when pasting.</p>
+<p>Text alignment is now generally achieved with <abbr>CSS</abbr>, and because Ad Astra does not allow inline <abbr>CSS</abbr>, alignment will often be lost when pasting.</p>
 
 <p>Pasting from sources that use the <code>align</code> attribute and <code>&lt;center&gt;</code> element will keep the formatting intact, but please note that the alignment buttons in the <abbr>RTE</abbr> cannot modify center alignment created with the <code>&lt;center&gt;</code> tag.</p>
 

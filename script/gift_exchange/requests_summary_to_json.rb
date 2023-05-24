@@ -10,7 +10,7 @@ if ARGV.size < 2
     Takes a variable number of arguments. The last argument specifies the
     JSON file to be used as the output; the first N - 1 arguments specify
     a list of HTML files, downloaded from the Requests Summary of an
-    existing exchange on AO3. The JSON is outputted in a format suitable
+    existing exchange on AAF. The JSON is outputted in a format suitable
     for load_json_challenge.rb. It's assumed that every participant's offers
     are identical to their requests.
 

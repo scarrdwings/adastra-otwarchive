@@ -3,5 +3,5 @@ class ApplicationMailer < ActionMailer::Base
 
   layout "mailer"
   helper :mailer
-  default from: "Archive of Our Own " + "<#{ArchiveConfig.RETURN_ADDRESS}>"
+  default from: "Ad Astra Star Trek Fanfiction Archive" + "<#{ArchiveConfig.RETURN_ADDRESS}>"
 end

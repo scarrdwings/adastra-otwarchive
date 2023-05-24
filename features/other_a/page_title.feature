@@ -1,5 +1,5 @@
 Feature: Page titles
-When I browse the AO3
+When I browse Ad Astra
 I want page titles to be readable
 
 Scenario: user reads a TOS or FAQ page

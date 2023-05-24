@@ -8,9 +8,7 @@ Its development is sponsored and managed by the [Organization for Transformative
 
 Release Status
 ---------
-Development of the OTW-Archive software is an ongoing labor of love. You can see it in action on the [Archive of Our Own](https://archiveofourown.org/), aka AO3, a multifandom archive also run by the OTW.
-
-You can find more information about the [history and future of the AO3 project on the OTW website](https://www.transformativeworks.org/archive_of_our_own/).
+Development of the OTW-Archive software is an ongoing labor of love. You can see it in action on the [Archive of Our Own](https://archiveofourown.org/), aka AO3, a multifandom archive also run by the OTW.  Or you can see it in action here on [Ad Astra](https://www.adastrafanfic.com/), too.
 
 If you wish to use this software, SquidgeWorld has generously provided [setup notes](https://squidgeworld.org/works/34491).
 
@@ -25,6 +23,8 @@ We welcome pull requests for bugs described in our issue tracker. Please see our
 API
 ----------
 There is currently no API for the OTW-Archive software. While it is something we're considering for the future, we ask that contributors instead focus on issues already in our [Jira issue tracker](https://otwarchive.atlassian.net/).
+
+Steff's Notes: OTOH, if you want to work on one anyway, no one should be looking any gift horses in the mouth.
 
 License and Acknowledgments
 ----------

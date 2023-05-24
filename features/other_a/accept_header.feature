@@ -1,6 +1,6 @@
 Feature: Browsing from a non-standard user agent
 As a Playstation user
-In order to browse the AO3
+In order to browse Ad Astra
 I want to be able to browse from my PSP
 
 Scenario: user agent requests a weird header

@@ -29,7 +29,7 @@ a, a:link, a:visited:hover {
 }
 
 a:visited {
-  color: #666;
+  color: #0f0015;
   text-decoration: none;
   border-bottom: 1px dashed;
 }
@@ -185,7 +185,7 @@ sup {
 /*http://otwcode.github.com/docs/front_end_coding/accessible-tables*/
 
 table {
-  background: #ddd;
+  background: #3b0054;
   border-collapse: collapse;
   margin: auto;
   width: 100%;
@@ -229,7 +229,7 @@ th {
 }
 
 thead td {
-  background: #ddd;
+  background: #3b0054;
   border-bottom: 1px solid #fff;
 }
 

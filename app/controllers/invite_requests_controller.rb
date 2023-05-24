@@ -25,7 +25,7 @@ class InviteRequestsController < ApplicationController
   def create
     unless @admin_settings.invite_from_queue_enabled?
       flash[:error] = ts("<strong>New invitation requests are currently closed.</strong> For more information, please check the %{news}.",
-                         news: view_context.link_to("\"Invitations\" tag on AO3 News", admin_posts_path(tag: 143))).html_safe
+                         news: view_context.link_to("\"Invitations\" tag on AAF News", admin_posts_path(tag: 143))).html_safe
       redirect_to invite_requests_path
       return
     end
@@ -33,7 +33,7 @@ class InviteRequestsController < ApplicationController
     @invite_request = InviteRequest.new(invite_request_params)
     @invite_request.ip_address = request.remote_ip
     if @invite_request.save
-      flash[:notice] = "You've been added to our queue! Yay! We estimate that you'll receive an invitation around #{@invite_request.proposed_fill_date}. We strongly recommend that you add do-not-reply@archiveofourown.org to your address book to prevent the invitation email from getting blocked as spam by your email provider."
+      flash[:notice] = "You've been added to our queue! Yay! We estimate that you'll receive an invitation around #{@invite_request.proposed_fill_date}. We strongly recommend that you add do-not-reply@adastrafanfic.com to your address book to prevent the invitation email from getting blocked as spam by your email provider."
       redirect_to invite_requests_path
     else
       render action: :index

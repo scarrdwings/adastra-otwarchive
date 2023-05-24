@@ -78,15 +78,15 @@
   post: (link_to ts('Post New'), new_work_path),
   posting_faq: (link_to ts('Posting and Editing FAQ'), 
                         archive_faqs_path + '/posting-and-editing'),
-  post_tutorial: (link_to ts('Tutorial: Posting a Work on AO3'), 
-                          archive_faqs_path + '/tutorial-posting-a-work-on-ao3')
+  post_tutorial: (link_to ts('Tutorial: Posting a Work on Ad Astra'), 
+                          archive_faqs_path + '/tutorial-posting-a-work-on-aaf')
   ).html_safe %></p>
 
   <h3 class="heading" id="browsing">
     <%= ts('Browsing') %>
   </h3>
   <p><%= ts('You can start browsing works by going to the "%{fandoms}" tab at 
-  the top of any Archive page in the default skin and selecting either 
+  the top of any archive page in the default skin and selecting either 
   "%{all_fandoms}" or one of the subsets such as "%{movies}". Alternatively, you 
   can use the %{search} to look for specific fandoms, works, or users. You can 
   use the "Sort and Filter" form to narrow down the results in any fandom page. 
@@ -108,11 +108,11 @@
   <h3 class="heading" id="tags">
     <%= ts('Tags') %>
   </h3>
-  <p><%= ts('All tags on the Archive—including those for fandoms, relationships, 
+  <p><%= ts('Some of the tags on the archive—including those for fandoms, relationships, 
   and characters—start out user-created. You can always use the existing tags by 
-  selecting from the autocomplete list. If you cannot find the tags you want to 
-  use, feel free to create new tags for your works. Behind the scenes, our tag 
-  wrangling team will match the tags up with their synonyms, so that people can 
+  selecting from the autocomplete list.  We prefer you use archive tags when possible. 
+  If you cannot find the tags you want to use, feel free to create new tags for your works. 
+  Behind the scenes, our tag wrangling team will match the tags up with their synonyms, so that people can 
   find your work whether you tag it "<abbr>AMTDI</abbr>", "Aliens Made Them Do 
   It", or "Sex Pollen". Refer to the %{tags_faq} to learn more.',
   tags_faq: (link_to ts('Tags FAQ'), archive_faqs_path + '/tags')
@@ -121,7 +121,7 @@
   <h3 class="heading" id="warnings">
     <%= ts('Warnings') %>
   </h3>
-  <p><%= ts('The Archive defines four "primary" %{warnings_tos}: "Graphic 
+  <p><%= ts('The archive defines four "primary" %{warnings_tos}: "Graphic 
   Depictions Of Violence", "Major Character Death", "Rape/Non-Con", and 
   "Underage". When posting a work, you have the option to explicitly select 
   warnings for this content, deny the presence of such content ("No Archive 
@@ -131,7 +131,7 @@
   warnings.',
   warnings_tos: (link_to ts('Archive-specific warnings'), tos_path + '#IV.K.3')
   ).html_safe %></p>
-  <p><%= ts('When browsing the Archive, warnings will be displayed in the blurb 
+  <p><%= ts('When browsing the archive, warnings will be displayed in the blurb 
   of each work. Official warning tags are displayed in bold. A four square grid 
   in the top left corner of each work\'s blurb indicates the work\'s rating, 
   completion status, pairing category, and any Archive warnings that apply to 
@@ -142,7 +142,7 @@
   <h3 class="heading" id="bookmarking">
     <%= ts('Bookmarking Works') %>
   </h3>
-  <p><%= ts('You can bookmark works on the Archive as well as works hosted on 
+  <p><%= ts('You can bookmark works on the archive as well as works hosted on 
   other sites. You can choose to make your bookmarks public or private. You can 
   also mark a public bookmark as a rec (recommendation). Additionally, you can 
   add notes and tags to the bookmark, and/or add it to a collection. For more 
@@ -154,8 +154,8 @@
     <%= ts('Preferences') %></h3>
   <p><%= ts('"%{set_preferences}" is located next to the "%{edit_profile}" 
   button, and allows you to adjust certain settings to personalize your 
-  experience on the site. The Preferences area controls both the Archive\'s 
-  behavior (such as whether your history is saved) and the Archive\'s 
+  experience on the site. The Preferences area controls both the archive\'s 
+  behavior (such as whether your history is saved) and the archive\'s 
   appearance. Go to the %{preferences_faq} for more details.',
   set_preferences: (link_to ts('Set My Preferences'),     
                             user_preferences_path(current_user)),
@@ -164,7 +164,7 @@
                             archive_faqs_path + '/preferences') 
   ).html_safe %></p>
   <p><%= ts('For more information on how to customize the skins and interface of 
-  the Archive, refer to the %{skins_faq} and %{tutorial_list}.',
+  the archive, refer to the %{skins_faq} and %{tutorial_list}.',
   skins_faq: (link_to ts('Skins and Archive Interface FAQ'), 
                       archive_faqs_path + '/skins-and-archive-interface'),
   tutorial_list: (link_to ts('List of Tutorials'), 
@@ -219,10 +219,10 @@
   <h3 class="heading" id="support">
     <%= ts('Support and Feedback') %>
   </h3>
-  <p><%= ts('Some frequently asked questions about the Archive are answered in 
+  <p><%= ts('Some frequently asked questions about the archive are answered in 
   the broader %{faq}. You may also like to check out our %{known_issues}. If you 
   need more help, please %{contact_support}. If you want to know more about some 
-  user-created tools that work with the Archive, please visit the 
+  user-created tools that work with the archive, please visit the 
   %{tools_faq}.',
   faq: (link_to ts('Archive FAQ'), archive_faqs_path),
   known_issues: (link_to ts('Known Issues'), known_issues_path),

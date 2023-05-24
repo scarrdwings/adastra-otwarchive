@@ -197,7 +197,7 @@ end
 
 When /^I fill in the sign up form with valid data$/ do
   step(%{I fill in "user_registration_login" with "#{NEW_USER}"})
-  step(%{I fill in "user_registration_email" with "test@archiveofourown.org"})
+  step(%{I fill in "user_registration_email" with "test@adastrafanfiction.com"})
   step(%{I fill in "user_registration_password" with "password1"})
   step(%{I fill in "user_registration_password_confirmation" with "password1"})
   step(%{I check "user_registration_age_over_13"})
@@ -234,7 +234,7 @@ end
 
 Then /^I should get an activation email for "(.*?)"$/ do |login|
   step(%{1 email should be delivered})
-  step(%{the email should contain "Welcome to the Archive of Our Own,"})
+  step(%{the email should contain "Welcome to the Ad Astra,"})
   step(%{the email should contain "#{login}"})
   step(%{the email should contain "activate your account"})
 end

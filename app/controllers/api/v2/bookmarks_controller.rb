@@ -161,8 +161,8 @@ class Api::V2::BookmarksController < Api::V2::BaseController
     fandom = external_work_attributes[:fandom_string]
 
     if url.nil?
-      # Unreachable and AO3 URLs are handled in the ExternalWork model
-      errors << "This bookmark does not contain a URL to an external site. Please specify a valid, non-AO3 URL."
+      # Unreachable and AAF URLs are handled in the ExternalWork model
+      errors << "This bookmark does not contain a URL to an external site. Please specify a valid, non-AAF URL."
     end
 
     if author.nil? || author == ""

@@ -705,14 +705,14 @@ describe UserMailer do
       describe "HTML version" do
         it "has the correct content" do
           expect(email).to have_html_part_content("Hi!")
-          expect(email).to have_html_part_content(">The AO3 Support team</b>")
+          expect(email).to have_html_part_content(">The Ad Astra Support team</b>")
         end
       end
 
       describe "text version" do
         it "has the correct content" do
           expect(email).to have_text_part_content("Hi!")
-          expect(email).to have_text_part_content("The AO3 Support team")
+          expect(email).to have_text_part_content("The Ad Astra Support team")
         end
       end
     end
@@ -737,14 +737,14 @@ describe UserMailer do
         it "has the correct content" do
           expect(email).to have_html_part_content("Hi, <b")
           expect(email).to have_html_part_content("#{feedback.username}</b>")
-          expect(email).to have_html_part_content(">The AO3 Support team</b>")
+          expect(email).to have_html_part_content(">The Ad Astra Support team</b>")
         end
       end
 
       describe "text version" do
         it "has the correct content" do
           expect(email).to have_text_part_content("Hi, #{feedback.username}!")
-          expect(email).to have_text_part_content("The AO3 Support team")
+          expect(email).to have_text_part_content("The Ad Astra Support team")
         end
       end
     end
@@ -1167,14 +1167,14 @@ describe UserMailer do
       it "has the correct content" do
         expect(email).to have_html_part_content("Dear <b")
         expect(email).to have_html_part_content("#{user.login}</b>,")
-        expect(email).to have_html_part_content("was deleted from the Archive by a site admin")
+        expect(email).to have_html_part_content("was deleted from the archive by a site admin")
       end
     end
 
     context "text version" do
       it "has the correct content" do
         expect(email).to have_text_part_content("Dear #{user.login},")
-        expect(email).to have_text_part_content("Your work \"#{work.title}\" was deleted from the Archive by a site admin")
+        expect(email).to have_text_part_content("Your work \"#{work.title}\" was deleted from the archive by a site admin")
       end
     end
 

@@ -23,7 +23,7 @@ describe SupportReporter do
       "departmentId" => "support_dep_id",
       "email" => "walrus@example.org",
       "contactId" => "1",
-      "subject" => "[AO3] Support - This is a tragesy",
+      "subject" => "[Ad Astra] Support - This is a tragedy",
       "description" => "Nothing more to say",
       "cf" => {
         "cf_language" => "English",
@@ -54,7 +54,7 @@ describe SupportReporter do
       it "returns a hash containing a placeholder subject" do
         allow(subject).to receive(:title).and_return("")
 
-        expect(subject.report_attributes.fetch("subject")).to eq("[AO3] Support - No Title")
+        expect(subject.report_attributes.fetch("subject")).to eq("[Ad Astra] Support - No Title")
       end
     end
 

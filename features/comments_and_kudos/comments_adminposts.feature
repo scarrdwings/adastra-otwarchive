@@ -118,13 +118,13 @@ Feature: Commenting on admin posts
       And basic languages
       And I am logged in as a "translation" admin
     When I make a translation of an admin post
-      And I follow "Back to AO3 News Index"
+      And I follow "Back to AAF News Index"
       And I follow "Edit"
       And I choose "Only registered users can comment"
       And I press "Post"
-    Then I should see "Sorry, this news post doesn't allow non-Archive users to comment."
+    Then I should see "Sorry, this news post doesn't allow non-archive users to comment."
     When I follow "Deutsch"
-    Then I should see "Sorry, this news post doesn't allow non-Archive users to comment."
+    Then I should see "Sorry, this news post doesn't allow non-archive users to comment."
 
   Scenario: Translation of admin post with comments disabled
     Given I have posted an admin post with comments disabled

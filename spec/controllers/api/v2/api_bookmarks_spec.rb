@@ -103,10 +103,10 @@ describe "API v2 BookmarksController", type: :request, bookmark_search: true do
       assert_equal 400, response.status
       bookmark_response = JSON.parse(response.body, symbolize_names: true)[:bookmarks].first
       assert_equal bookmark_response[:messages].first,
-                   "This bookmark does not contain a URL to an external site. Please specify a valid, non-AO3 URL."
+                   "This bookmark does not contain a URL to an external site. Please specify a valid, non-Ad Astra URL."
     end
 
-    it "returns an error message if the URL is on AO3" do
+    it "returns an error message if the URL is on AAF" do
       work = create(:work)
       post "/api/v2/bookmarks",
            params: { archivist: archivist.login,

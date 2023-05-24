@@ -1,23 +1,23 @@
 module MailerHelper
 
   def style_bold(text)
-    ("<b style=\"color:#990000\">" + "#{text}".html_safe + "</b>").html_safe
+    ("<b style=\"color:#c40055\">" + "#{text}".html_safe + "</b>").html_safe
   end
 
   def style_link(body, url, html_options = {})
-    html_options[:style] = "color:#990000"
+    html_options[:style] = "color:#c40055"
     link_to(body.html_safe, url, html_options)
   end
 
   # For work, chapter, and series links
   def style_creation_link(title, url, html_options = {})
-    html_options[:style] = "color:#990000"
+    html_options[:style] = "color:#c40055"
     ("<i><b>" + link_to(title.html_safe, url, html_options) + "</b></i>").html_safe
   end
 
   # For work, chapter, and series titles
   def style_creation_title(title)
-    ("<i><b style=\"color:#990000\">" + title.html_safe + "</b></i>").html_safe
+    ("<i><b style=\"color:#c40055\">" + title.html_safe + "</b></i>").html_safe
   end
 
   def style_footer_link(body, url, html_options = {})
@@ -26,7 +26,7 @@ module MailerHelper
   end
 
   def style_email(email, name = nil, html_options = {})
-    html_options[:style] = "color:#990000"
+    html_options[:style] = "color:#c40055"
     mail_to(email, name.nil? ? nil : name.html_safe, html_options)
   end
 

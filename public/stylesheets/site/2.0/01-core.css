@@ -14,7 +14,7 @@ body, .toggled form, .dynamic form, .secondary, .dropdown {
 }
 
 a, a:link {
-  color: #900;
+  color: ##0f0015;
   text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a, a:link {
 }
 
 li.blurb, fieldset, form dl {
-  border: 1px solid #ddd;
+  border: 1px solid #4a006a;
   padding: 1em;
   overflow: hidden;
 }

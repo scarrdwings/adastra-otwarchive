@@ -100,5 +100,5 @@ Then /^the email should contain invitation warnings from "([^\"]*)" for work "([
 end
 
 Then /^the email should contain claim information$/ do
-  step %{the email should contain "automatically added to your AO3 account"}
+  step %{the email should contain "automatically added to your AAF account"}
 end

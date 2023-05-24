@@ -124,7 +124,7 @@ class UsersController < ApplicationController
         external_author.claim!(@user)
       end
 
-      flash[:notice] += ts(" We found some works already uploaded to the Archive of Our Own that we think belong to you! You'll see them on your homepage when you've logged in.")
+      flash[:notice] += ts(" We found some works already uploaded to Ad Astra that we think belong to you! You'll see them on your homepage when you've logged in.")
     end
 
     redirect_to(new_user_session_path)

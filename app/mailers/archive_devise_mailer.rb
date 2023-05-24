@@ -6,7 +6,7 @@ class ArchiveDeviseMailer < Devise::Mailer
   helper :mailer
   helper :application
 
-  default from: "Archive of Our Own <#{ArchiveConfig.RETURN_ADDRESS}>"
+  default from: "Ad Astra Star Trek Fanfiction Archive <#{ArchiveConfig.RETURN_ADDRESS}>"
 
   def reset_password_instructions(record, token, options = {})
     @user = record

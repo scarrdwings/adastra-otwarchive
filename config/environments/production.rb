@@ -1,7 +1,6 @@
 Otwarchive::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
-
-  config.hosts = ArchiveConfig.PERMITTED_HOSTS
+  config.hosts.clear
 
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
@@ -38,10 +37,10 @@ Otwarchive::Application.configure do
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
-  config.serve_static_files = false
+  config.serve_static_files = true
 
   # Enable serving of images, stylesheets, and javascripts from an asset server
-  # config.action_controller.asset_host = "http://assets.example.com"
+  #config.action_controller.asset_host = ENV[ASSET_HOST].empty? ? 'http://' + Rails::Server.new.options[:Host] + ':' + Rails::Server.new.options[:Port] : ENV[ASSET_HOST]
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

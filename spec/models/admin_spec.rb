@@ -25,7 +25,7 @@ describe Admin, :ready do
     expect(ActionMailer::Base.deliveries.last.recipients).to \
       eq(["test@example.com"])
     expect(ActionMailer::Base.deliveries.last.subject).to \
-      eq("[AO3] Your AO3 admin account")
+      eq("[Ad Astra] Your AAF admin account")
   end
 
   context "invalid" do

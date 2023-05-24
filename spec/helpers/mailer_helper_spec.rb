@@ -7,7 +7,7 @@ describe MailerHelper do
 
   describe "style_creation_link" do
     it "nests red link inside bold inside italics" do
-      expect(style_creation_link(work.title, work_url(work))).to eq("<i><b><a style=\"color:#990000\" href=\"#{work_url(work)}\">#{work.title}</a></b></i>")
+      expect(style_creation_link(work.title, work_url(work))).to eq("<i><b><a style=\"color:#c40055\" href=\"#{work_url(work)}\">#{work.title}</a></b></i>")
     end
   end
 
@@ -34,19 +34,19 @@ describe MailerHelper do
   describe "#creation_link_with_word_count" do
     context "when creation is a chapter" do
       it "returns hyperlinked full_chapter_title and parenthetical word count" do
-        expect(creation_link_with_word_count(chapter, chapter_url(chapter))).to eq("<i><b><a style=\"color:#990000\" href=\"#{chapter_url(chapter)}\">#{chapter.full_chapter_title}</a></b></i> (#{chapter.word_count} words)")
+        expect(creation_link_with_word_count(chapter, chapter_url(chapter))).to eq("<i><b><a style=\"color:#c40055\" href=\"#{chapter_url(chapter)}\">#{chapter.full_chapter_title}</a></b></i> (#{chapter.word_count} words)")
       end
     end
 
     context "when creation is a series" do
       it "returns hyperlinked series title and parenthetical word count" do
-        expect(creation_link_with_word_count(series, series_url(series))).to eq("<i><b><a style=\"color:#990000\" href=\"#{series_url(series)}\">#{series.title}</a></b></i> (#{series.word_count} words)")
+        expect(creation_link_with_word_count(series, series_url(series))).to eq("<i><b><a style=\"color:#c40055\" href=\"#{series_url(series)}\">#{series.title}</a></b></i> (#{series.word_count} words)")
       end
     end
 
     context "when creation is a work" do
       it "returns hyperlinked work title and parenthetical word count" do
-        expect(creation_link_with_word_count(work, work_url(work))).to eq("<i><b><a style=\"color:#990000\" href=\"#{work_url(work)}\">#{work.title}</a></b></i> (#{work.word_count} words)")
+        expect(creation_link_with_word_count(work, work_url(work))).to eq("<i><b><a style=\"color:#c40055\" href=\"#{work_url(work)}\">#{work.title}</a></b></i> (#{work.word_count} words)")
       end
     end
   end
@@ -113,8 +113,8 @@ describe MailerHelper do
       let(:fandoms) { [fandom] }
 
       it "returns \"Fandom: \" styled bold and red followed by a link to the fandom" do
-        label = "<b style=\"color:#990000\">Fandom: </b>"
-        link = link_to(fandom.name, fandom_url(fandom), style: "color:#990000")
+        label = "<b style=\"color:#c40055\">Fandom: </b>"
+        link = link_to(fandom.name, fandom_url(fandom), style: "color:#c40055")
         expect(style_work_tag_metadata(fandoms)).to eq("#{label}#{link}")
       end
     end
@@ -125,9 +125,9 @@ describe MailerHelper do
       let(:fandoms) { [fandom1, fandom2] }
 
       it "returns \"Fandoms: \" styled bold and red followed by links to the fandoms combined using to_sentence" do
-        label = "<b style=\"color:#990000\">Fandoms: </b>"
-        link1 = link_to(fandom1.name, fandom_url(fandom1), style: "color:#990000")
-        link2 = link_to(fandom2.name, fandom_url(fandom2), style: "color:#990000")
+        label = "<b style=\"color:#c40055\">Fandoms: </b>"
+        link1 = link_to(fandom1.name, fandom_url(fandom1), style: "color:#c40055")
+        link2 = link_to(fandom2.name, fandom_url(fandom2), style: "color:#c40055")
         list = "#{link1} and #{link2}"
         expect(style_work_tag_metadata(fandoms)).to eq("#{label}#{list}")
       end
@@ -145,7 +145,7 @@ describe MailerHelper do
         let(:tags) { [tag] }
 
         it "returns \"#{labels[0]} \" styled bold and red followed by the tag name" do
-          label = "<b style=\"color:#990000\">#{labels[0]} </b>"
+          label = "<b style=\"color:#c40055\">#{labels[0]} </b>"
           expect(style_work_tag_metadata(tags)).to eq("#{label}#{tag.name}")
         end
       end
@@ -156,7 +156,7 @@ describe MailerHelper do
         let(:tags) { [tag1, tag2] }
 
         it "returns \"#{labels[1]} \" styled bold and red followed by a comma-separated list of tag names" do
-          label = "<b style=\"color:#990000\">#{labels[1]} </b>"
+          label = "<b style=\"color:#c40055\">#{labels[1]} </b>"
           list = "#{tag1.name}, #{tag2.name}"
           expect(style_work_tag_metadata(tags)).to eq("#{label}#{list}")
         end

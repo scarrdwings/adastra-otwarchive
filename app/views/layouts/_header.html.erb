@@ -52,6 +52,10 @@
       <%= render 'menu/menu_search' %>
     </li>
     <li class="dropdown">
+      <%= link_to ts('Community', key: 'header'), menu_community_path %>
+      <%= render 'menu/menu_community' %>
+    </li>
+    <li class="dropdown">
       <%= link_to ts('About', key: 'header'), menu_about_path %>
       <%= render 'menu/menu_about' %>
     </li>

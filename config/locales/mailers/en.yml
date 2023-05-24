@@ -12,7 +12,7 @@ en:
         unrequested: If you did not request this password reset, you may ignore this email and your previous password will continue to work.
   admin_mailer:
     set_password_notification:
-      created: Your AO3 admin account has been created.
+      created: Your AAF admin account has been created.
       expiration:
         one: 'The link to set your password is good for %{count} day. If it no longer works, you can request a password reset and use the link that will be emailed to you instead: %{request_reset_url}.'
         other: 'The link to set your password is good for %{count} days. If it no longer works, you can request a password reset and use the link that will be emailed to you instead: %{request_reset_url}.'
@@ -23,7 +23,7 @@ en:
       finish_html: Please %{set_password_link} so you can log in.
       request_reset: request a password reset
       set_password: follow this link to set your password
-      subject: "[%{app_name}] Your AO3 admin account"
+      subject: "[%{app_name}] Your AAF admin account"
       url: Admin login URL
       username: Admin username
   kudo_mailer:
@@ -61,36 +61,30 @@ en:
           html:
             donate_link_text: your donations
             part1: If you've received this message in error, please %{support_link}.
-            part2: The Archive of Our Own is a fan-run and fan-supported archive that relies on %{donate_link}.
+            part2: Ad Astra is a fan-run and fan-supported archive that relies on %{donate_link}.
             support_link_text: contact Support
           text:
             part1: If you've received this message in error, please contact Support at %{support_url}.
-            part2: 'The Archive of Our Own is a fan-run and fan-supported archive that relies on your donations: %{donate_url}.'
+            part2: 'Ad Astra is a fan-run and fan-supported archive that relies on your donations: %{donate_url}.'
         sent_at: Sent at %{sent_at}.
       greeting:
         formal: Dear %{name},
         informal:
           addressed: Hi, %{name}!
           unaddressed: Hi!
-        introductory: Hello from the Archive of Our Own!
+        introductory: Hello from Ad Astra!
       metadata_label_indicator: ": "
       signature:
-        abuse_team: The AO3 Policy & Abuse team
-        app_short_name: AO3
+        app_short_name: AAF
         open_doors: The Open Doors team
-        parent_org: Organization for Transformative Works
-        support: The AO3 Support team
+        parent_org: Ad Astra
+        support: The AAF Support team
   user_mailer:
     abuse_report:
-      copy:
-        comment: Description of the content or issue
-        intro: Here is a copy of your report for your reference
-        summary: Terms of Service violation
-        url: URL of the reported page
-      report_received: The Policy & Abuse team has received your report, and our volunteers will investigate as soon as they can. Because our team is small and we receive thousands of reports each month, it may take some time for us to get to your report.
-      resubmission: Please do not resubmit this report unless you have additional information that you did not include in your original report. Submitting multiple reports about the same issue may delay our response.
-      subject: "[%{app_name}] Abuse - %{summary}"
-      thank_you: Thank you for your patience.
+      description_para: 'Description of the abuse:'
+      para1: 'The following abuse report has been sent to the Abuse team:'
+      subject: "[%{app_name}] Your abuse report"
+      url_para: 'URL of the page the abuse is on:'
     admin_deleted_work_notification:
       bye: Attached is a copy of your work for your reference.
       contact_abuse: contact our Policy & Abuse team
@@ -116,7 +110,7 @@ en:
       text:
         help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
         hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
+        tos_violation: If your work was hidden due to being in violation of the a's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
       tos: Terms of Service
     anonymous_or_unrevealed_notification:
       anonymous_info: Anonymous works are included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
@@ -160,7 +154,7 @@ en:
         footer_link: the challenge profile page
         look_up: You can look up this assignment from %{link}.
         look_up_link: your Assignments page
-        part1: You have been assigned the following request in the %{link} challenge at the Archive of Our Own!
+        part1: You have been assigned the following request in the %{link} challenge at Ad Astra!
       optional_tags: 'Optional Tags:'
       prompt_url: 'Prompt URL:'
       prompts: 'Prompts:'
@@ -245,11 +239,11 @@ en:
         part1_yourself: Your work "%{title}" was deleted at your request.
         part2: If you have questions, please %{support} (%{url}).
     invitation:
-      been_invited: You've been invited to join the Archive of Our Own!
+      been_invited: You've been invited to join Ad Astra!
       features: With an account, you can post fanworks, use bookmarks to keep track of works you enjoyed, receive subscription emails when your favorite creators or works update, customize the way the site looks for you, and more!
-      has_invited: "%{user_name} has invited you to join the Archive of Our Own!"
+      has_invited: "%{user_name} has invited you to join Ad Astra!"
       html:
-        about: The Archive of Our Own (AO3) is a free, noncommercial archive built by and for fans. Our servers are owned by our parent nonprofit, the %{otw_link}, which works to protect fan rights and preserve fanworks. We welcome all kinds of fanworks, including fanfiction, fanart, fanvids, and podfic from any fandom.
+        about: Ad Astra is a free, noncommercial archive built by and for fans.  We welcome all kinds of Trek fanworks, including fanfiction, fanart, fanvids, and podfic.
         activation_support: After you sign up, you'll receive an account activation email. If you do not receive this email after 48 hours, please %{support_link}.
         faq: For more information, please check %{faq_link}.
         faq_link_text: our FAQ
@@ -259,15 +253,15 @@ en:
         support_link_text: contact Support
       subject: "[%{app_name}] Invitation"
       text:
-        about: The Archive of Our Own (AO3) is a free, noncommercial archive built by and for fans. Our servers are owned by our parent nonprofit, the Organization for Transformative Works (%{otw_url}), which works to protect fan rights and preserve fanworks. We welcome all kinds of fanworks, including fanfiction, fanart, fanvids, and podfic from any fandom.
+        about: Ad Astra is a free, noncommercial archive built by and for fans. Our servers are owned by us and our software is the work of the Organization for Transformative Works (%{otw_url}), which works to protect fan rights and preserve fanworks. We welcome all kinds of Star Trek fanworks, including fanfiction, fanart, fanvids, and podfic from any fandom.
         activation_support: 'After you sign up, you''ll receive an account activation email. If you do not receive this email after 48 hours, please contact Support: %{support_url}.'
         faq: 'For more information, please check our FAQ: %{faq_url}.'
         join: 'If you''d like to join us, please follow this link to sign up: %{invitation_url}.'
     invitation_to_claim:
       html:
-        ao3_news: AO3 News
+        ao3_news: AAF News
         contact_open_doors: contact Open Doors
-        contact_support: contact AO3 Support
+        contact_support: contact AAF Support
         faq_page: FAQ page
         open_doors_name: Open Doors
         part1: You're receiving this e-mail because an archive has recently been imported by %{open_doors_name_link} into the %{app_link} (%{app_short_name}), and we believe that the following fanworks belong to you. We'd like to give you a chance to claim (or delete/orphan) these works if you want to. And if you don't already have an account under a different e-mail, we'd like to invite you aboard!
@@ -277,8 +271,8 @@ en:
         part3: If this is a mistake and these are not your works, please don't delete them! Please just %{contact_open_doors_link} and we will sort it out.
         part4: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please %{contact_support_link}.
         part5: Claim or remove your works here.
-        part7: If these works do belong to you, but you don't want them, you can orphan (so that they remain on the AO3, but with your name removed) or delete them (so that they are entirely removed from the AO3). You do not need to add these works to any account in order to orphan or delete them--you can do this directly from the claim link above. (For assistance, please %{contact_support_link}.)
-        part9: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        part7: If these works do belong to you, but you don't want them, you can orphan (so that they remain on the AAF, but with your name removed) or delete them (so that they are entirely removed from the AAF). You do not need to add these works to any account in order to orphan or delete them--you can do this directly from the claim link above. (For assistance, please %{contact_support_link}.)
+        part9: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AAF account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
         tutorial_page: tutorial page
       part12: If you're contacting us, please add email addresses from @transformativeworks.org to your list of safe contacts and check your spam folders for our reply.
       part6: 'The works uploaded include:'
@@ -287,13 +281,13 @@ en:
       text:
         part1: You're receiving this e-mail because an archive has recently been imported by Open Doors (%{open_doors_link}) into the %{app_name} (%{app_short_name} - %{app_url}), and we believe that the following fanworks belong to you. We'd like to give you a chance to claim (or delete/orphan) these works if you want to. And if you don't already have an account under a different e-mail, we'd like to invite you aboard!
         part10: If you had other works on the imported archive under an e-mail address you can no longer access, please contact Open Doors with any information that can help verify your identity.
-        part11: For other inquiries, please contact AO3 Support at %{support_link}.
-        part2: You can read announcements about recent archive moves at AO3 News (%{news_link}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_link}) or tutorials page (%{open_doors_tutorial_link}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_link}.
+        part11: For other inquiries, please contact AAF Support at %{support_link}.
+        part2: You can read announcements about recent archive moves at AAF News (%{news_link}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_link}) or tutorials page (%{open_doors_tutorial_link}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_link}.
         part3: If this is a mistake and these are not your works, please don't delete them! Please just contact Open Doors (%{open_doors_link}) and we will sort it out.
-        part4: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AO3 Support.
+        part4: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AAF Support.
         part5: 'Claim or remove your works here: %{claim_url}'
-        part7: If these works do belong to you, but you don't want them, you can orphan (so that they remain on the AO3, but with your name removed) or delete them (so that they are entirely removed from the AO3). You do not need to add these works to any account in order to orphan or delete them--you can do this directly from the claim link above. (For assistance, please contact Support at %{support_link}.)
-        part9: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        part7: If these works do belong to you, but you don't want them, you can orphan (so that they remain on the AAF, but with your name removed) or delete them (so that they are entirely removed from the AAF). You do not need to add these works to any account in order to orphan or delete them--you can do this directly from the claim link above. (For assistance, please contact Support at %{support_link}.)
+        part9: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_link} with your AAF account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
     invite_increase_notification:
       html:
         body:
@@ -313,16 +307,16 @@ en:
       subject: "[%{app_name}] Additional invitation request declined"
     recipient_notification:
       html:
-        collection: A gift work has been posted for you in the %{collection_link} collection at the Archive of Our Own!
-      no_collection: A gift work has been posted for you at the Archive of Our Own!
+        collection: A gift work has been posted for you in the %{collection_link} collection at Ad Astra!
+      no_collection: A gift work has been posted for you at Ad Astra!
       subject:
         collection: "[%{app_name}][%{collection_title}] A gift work for you from %{collection_title}"
         no_collection: "[%{app_name}] A gift work for you"
       text:
-        collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at the Archive of Our Own!
+        collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at Ad Astra!
     signup_notification:
       activate_your_account: follow this link to activate your account
-      admin_posts: AO3 News
+      admin_posts: AAF News
       bye: We hope you enjoy using the Archive.
       contact_support: contact Support
       faq: FAQ
@@ -334,8 +328,8 @@ en:
       text:
         part1: 'Please follow this link to activate your account: %{activate_account_url}'
         part2: Once your account is up and running, you can post your fanworks, set up email subscriptions to let you know when your favorite creators or works have updated, set preferences to customize the way the site looks and works for you, keep track of the works you've accessed on the Archive via your history, and much more.
-        part3: 'There''s lots of information and advice on how to use the Archive in our FAQ at %{faq_url}. You''ll find the latest news about site developments on AO3 News at %{admin_posts_url}. If you need more help, run into a bug, or have questions or comments, please contact Support, who are always happy to help out: %{contact_support_url}.'
-      welcome: Welcome to the Archive of Our Own, %{login}!
+        part3: 'There''s lots of information and advice on how to use the Archive in our FAQ at %{faq_url}. You''ll find the latest news about site developments on Ad Astra News at %{admin_posts_url}. If you need more help, run into a bug, or have questions or comments, please contact Support, who are always happy to help out: %{contact_support_url}.'
+      welcome: Welcome to Ad Astra, %{login}!
   users:
     mailer:
       reset_password_instructions:
